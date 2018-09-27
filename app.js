@@ -2,13 +2,9 @@
 // static/images/ufo.svg
 var tableData = data;
 
-
-
-// Get a reference to the table and table body
+// Reference to the table and table body
 
 var tbody = d3.select("tbody");
-
-
 
 function buildTable(table) {
 
@@ -29,10 +25,7 @@ function buildTable(table) {
 }
 
 
-
 buildTable(tableData);
-
-
 
 // Select the Filter Table button
 
@@ -43,8 +36,6 @@ submit.on("click", function() {
     // Prevent the page from refreshing
 
     d3.event.preventDefault();
-
-
 
     // Get the value property of the input element
 
@@ -60,7 +51,7 @@ submit.on("click", function() {
 
 
 
-    // Filtered data array
+    // Data array filtered
 
     var filteredData = tableData.filter(tableDatum => 
 
